@@ -109,6 +109,7 @@ body{
 
 .onamaopis{
     background-color: rgba(240, 240, 240, 1);
+    border: 4px ridge brown;
     border-radius: 2%;
     position: absolute;
     top: 500px;
@@ -119,3 +120,4 @@ body{
     padding: 10px;
     line-height: 1.5em;
 }
+
