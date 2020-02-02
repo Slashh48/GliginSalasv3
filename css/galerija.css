@@ -33,11 +33,82 @@ body{
     height: 100%;
 }
 
-.nav-menu{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#hamburger-icon {
+    display: none;
+    cursor: pointer;
+  }
+
+  .hamburger-text{
+    display: none;
+}
+
+
+  
+
+  .bar1, .bar2, .bar3 {
+    width: 50px;
+    height: 7px;
+    background-color: #FFF;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#nav-menu{
     height: 100%;
     width: 16.5%;
     background-color: rgba(51, 51, 51, 0.8);
     display: inline-block;
+    position: absolute;
+    z-index: 100;
     
 }
 
@@ -51,14 +122,14 @@ body{
     font-style: italic;
     
 }
-.nav-menu ul{
+#nav-menu ul{
     margin: 0;
     padding: 0;
     padding-top: 100px;
     font-family: 'VikendicaNav';
 }
 
-.nav-menu li{
+#nav-menu li{
     color: white;
     list-style-type: none;
     padding-left: 60px;
@@ -66,14 +137,14 @@ body{
     line-height: 2.5em;
 }
 
-.nav-menu a{
+#nav-menu a{
     text-decoration: none;
 }
 
 .li-active{
     background-color: #222;
 }
-.nav-menu li:hover{
+#nav-menu li:hover{
     background-color: #000;
 }
 
@@ -102,7 +173,7 @@ body{
 
 .main{
     display: inline-block;
-    width: 83.5%;
+    width: 100%;
     background-color: rgb(20, 20, 20);
     position: absolute;
     height: 95%;
@@ -132,7 +203,7 @@ body{
 
 .leto{
     display: inline-block;
-    margin-left: 150px;
+    margin-left: 25%;
     background-color: rgb(40, 40, 40);
     width: 500px;
     height: 500px;
@@ -143,7 +214,7 @@ body{
 
 .zima{
     display: inline-block;
-    margin-left: 300px;
+    margin-left: 7%;
     background-color: rgb(40, 40, 40);
     width: 500px;
     height: 500px;
@@ -164,3 +235,123 @@ body{
     width: 200px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+
+@media only screen and (max-width: 1000px) {
+    #nav-menu{
+        display: none;
+    }
+
+    .responsive-part{
+        display: block;
+    }
+    
+    
+    #hamburger-icon {
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+    
+      .hamburger-text{
+          display: inline-block;
+      }
+    
+      .hamburger-text p{
+          color: white;
+          font-size: 40px;
+          font-family: 'Doppio One', sans-serif;
+      }
+    
+   
+    
+    #dobrodosli{
+        display: none;
+    }
+    
+    .kontakt-form{
+        display: none;
+    }
+    
+    #nav-menu{
+        height: 400px;
+        width: 100%;
+        position: absolute;
+        z-index: 100;
+        background-color: rgba(51, 51, 51, 1);
+    }
+   .main{
+    width: 100%;
+    height: 120%;
+   }
+
+   .main h2{
+    padding-top: 100px;
+   }
+
+   .leto{
+    margin-left: 10%;
+    margin-bottom: 30px;
+    width: 300px;
+    height: 300px;
+   }
+
+   .zima{
+    margin-left: 10%;
+    width: 300px;
+    height: 300px;
+   }
+
+
+
+    }
+
+@media only screen and (min-width: 1000px) and (max-width: 1700px) {
+
+        #dobrodosli{
+          font-size: 30px;
+        }
+      
+        #nav-menu li{
+          padding-left: 20px;
+        }
+      
+        #kontakt-info {
+          padding-left: 20px;
+        }
+      
+        .info-tel-email{
+          padding-left: 10px;
+          font-size: 14px;
+        }
+      
+        .leto{
+            margin-left: 18%;
+            width: 380px;
+            height: 380px;
+        }
+
+        .zima{
+            margin-left: 3%;
+            width: 380px;
+            height: 380px;
+        }
+
+      }
